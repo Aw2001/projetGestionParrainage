@@ -1,0 +1,17 @@
+<body class="align">
+
+  <app-dashboard></app-dashboard>
+    <h4>Entrez le numero electeur du candidat</h4>
+  
+    <form (ngSubmit)="verifierCandidat()">
+  
+      <div class="form__field">
+        <input type="text" class="form__input" pattern=".{9,10}" required [(ngModel)]="candidat.numero_carte_electeur" [ngModelOptions]="{ standalone: true }">
+        <span class="icon"><button type="submit" routerLink="/searchCandidat">Rechercher</button></span>
+      </div>
+  
+    </form>
+    <p *ngIf="candidatTrouve">Candidat trouvé : {{ candidatTrouve.nom }} {{ candidatTrouve.prenom }}</p>
+    <p></p>
+  
+</body>

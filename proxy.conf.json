@@ -1,0 +1,7 @@
+{
+    "/api": {
+      "target": "https://ga83a9fd18b1967-gestionparrainage.adb.af-johannesburg-1.oraclecloudapps.com/ords/api/",
+      "secure": false
+    }
+  }
+  

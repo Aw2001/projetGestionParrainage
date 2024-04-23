@@ -1,0 +1,27 @@
+<div class="header">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="Logo">
+    </div>
+    <div class="user">
+      <div class="search">
+        <input type="text" placeholder="Rechercher...">
+        <button>Rechercher</button>
+      </div>
+      <div class="user-image" (click)="toggleMenu()">AM</div>
+      <div class="navItems" *ngIf="isMenuOpened">
+        <div class="navItem">
+          <fa-icon [icon]="faEye"></fa-icon>
+          <span routerLink="/profil">Voir profil</span>
+        </div>
+        <div class="navItem">
+          <fa-icon [icon]="faUserEdit"></fa-icon>
+          <span routerLink="/modif-admin">Modifier profil</span>
+        </div>
+        <div class="navItem">
+          <fa-icon [icon]="faSignOutAlt"></fa-icon>
+          <span routerLink="/connexion">Déconnexion</span>
+        </div>
+  
+      </div>
+    </div>
+  </div>
